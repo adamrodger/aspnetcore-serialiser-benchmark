@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D4E36108-C753-4178-BB0B-57C4CC4B9F67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Benchmark", "src\AspNetCore.Benchmark\AspNetCore.Benchmark.csproj", "{522FBF70-0F11-44BC-8FB7-A8A2950F5F25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Benchmark", "src\AspNetCore.Benchmark\AspNetCore.Benchmark.csproj", "{522FBF70-0F11-44BC-8FB7-A8A2950F5F25}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{703C1FF2-64B4-4EE0-A088-5C564631E756}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Benchmarks.Tests", "tests\AspNetCore.Benchmarks.Tests\AspNetCore.Benchmarks.Tests.csproj", "{FB6EB14E-7D6C-427D-82C2-354B5F396EE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Benchmarks.Tests", "tests\AspNetCore.Benchmarks.Tests\AspNetCore.Benchmarks.Tests.csproj", "{FB6EB14E-7D6C-427D-82C2-354B5F396EE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{522FBF70-0F11-44BC-8FB7-A8A2950F5F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -49,8 +46,14 @@ Global
 		{FB6EB14E-7D6C-427D-82C2-354B5F396EE2}.Release|x86.ActiveCfg = Release|Any CPU
 		{FB6EB14E-7D6C-427D-82C2-354B5F396EE2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{522FBF70-0F11-44BC-8FB7-A8A2950F5F25} = {D4E36108-C753-4178-BB0B-57C4CC4B9F67}
 		{FB6EB14E-7D6C-427D-82C2-354B5F396EE2} = {703C1FF2-64B4-4EE0-A088-5C564631E756}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32F045C4-3C34-485A-ADD2-DEA550DB415B}
 	EndGlobalSection
 EndGlobal

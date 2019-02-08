@@ -6,7 +6,7 @@ namespace AspNetCore.Benchmarks.Tests
     {
         static void Main(string[] args)
         {
-            new BenchmarkSwitcher(typeof(Program).Assembly).RunAll();
+            new BenchmarkSwitcher(typeof(Program).Assembly).Run(args);
         }
     }
 }

@@ -12,9 +12,9 @@ using ProtoBuf;
 
 namespace MicroBenchmarks.Serializers
 {
-    internal static class DataGenerator
+    public static class DataGenerator
     {
-        internal static T Generate<T>()
+        public static T Generate<T>()
         {
             if (typeof(T) == typeof(LoginViewModel))
                 return (T)(object)CreateLoginViewModel();
