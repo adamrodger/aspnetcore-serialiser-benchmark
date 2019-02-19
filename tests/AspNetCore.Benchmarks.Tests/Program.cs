@@ -1,4 +1,5 @@
-﻿using BenchmarkDotNet.Running;
+﻿using System;
+using BenchmarkDotNet.Running;
 
 namespace AspNetCore.Benchmarks.Tests
 {
@@ -7,6 +8,10 @@ namespace AspNetCore.Benchmarks.Tests
         static void Main(string[] args)
         {
             new BenchmarkSwitcher(typeof(Program).Assembly).Run(args);
+
+#if DEBUG
+            Console.ReadLine();
+#endif
         }
     }
 }
